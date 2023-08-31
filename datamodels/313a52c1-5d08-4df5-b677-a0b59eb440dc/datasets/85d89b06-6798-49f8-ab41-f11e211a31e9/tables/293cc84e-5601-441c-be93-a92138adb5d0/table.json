@@ -1,0 +1,72 @@
+{
+    "buildBehavior": {
+        "type": "sync"
+    },
+    "columns": [
+        {
+            "hidden": false,
+            "id": "ID",
+            "indexed": false,
+            "isUpsertBy": false,
+            "name": "ID",
+            "oid": "11b4d8bb-5980-4d43-a3b7-1b54ba9204e0",
+            "precision": 0,
+            "scale": 0,
+            "size": 50,
+            "type": 8
+        },
+        {
+            "hidden": false,
+            "id": "Room_number",
+            "indexed": false,
+            "isUpsertBy": false,
+            "name": "Room_number",
+            "oid": "d987e2cf-feaa-4c02-8a1c-18d292d9299d",
+            "precision": 0,
+            "scale": 0,
+            "size": 50,
+            "type": 8
+        },
+        {
+            "hidden": false,
+            "id": "Division_ID",
+            "indexed": false,
+            "isUpsertBy": false,
+            "name": "Division_ID",
+            "oid": "19c9f710-504a-488e-b586-a3ee614fe9db",
+            "precision": 0,
+            "scale": 0,
+            "size": 50,
+            "type": 8
+        },
+        {
+            "hidden": false,
+            "id": "Bed_count",
+            "indexed": false,
+            "isUpsertBy": false,
+            "name": "Bed_count",
+            "oid": "e37b3bbb-e140-4bbc-91a9-b3ca38b78bd8",
+            "precision": 0,
+            "scale": 0,
+            "size": 50,
+            "type": 8
+        }
+    ],
+    "configOptions": {
+        "Table": "Rooms.csv",
+        "delimiter": ",",
+        "hasHeader": true,
+        "ignoreFirstRows": 0,
+        "ignoreLastRows": 0,
+        "stringQuote": "\""
+    },
+    "dataset": "85d89b06-6798-49f8-ab41-f11e211a31e9",
+    "hidden": false,
+    "id": "Rooms.csv",
+    "isMaterialized": false,
+    "name": "Rooms",
+    "oid": "293cc84e-5601-441c-be93-a92138adb5d0",
+    "tupleTransformations": [
+    ],
+    "type": "base"
+}

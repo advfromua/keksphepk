@@ -1,0 +1,116 @@
+{
+    "buildBehavior": {
+        "type": "sync"
+    },
+    "columns": [
+        {
+            "hidden": false,
+            "id": "Patient_ID",
+            "indexed": false,
+            "isUpsertBy": false,
+            "name": "Patient_ID",
+            "oid": "491bb3d2-d105-4502-a75a-6de3f0938342",
+            "precision": 0,
+            "scale": 0,
+            "size": 50,
+            "type": 8
+        },
+        {
+            "hidden": false,
+            "id": "Diagnosis_ID",
+            "indexed": false,
+            "isUpsertBy": false,
+            "name": "Diagnosis_ID",
+            "oid": "7aec0135-cd7e-42a5-b041-9dd45b47e309",
+            "precision": 0,
+            "scale": 0,
+            "size": 50,
+            "type": 8
+        },
+        {
+            "hidden": false,
+            "id": "ID",
+            "indexed": false,
+            "isUpsertBy": false,
+            "name": "ID",
+            "oid": "e7627e5a-b3c0-4433-9d75-022747e998cd",
+            "precision": 0,
+            "scale": 0,
+            "size": 50,
+            "type": 8
+        },
+        {
+            "hidden": false,
+            "id": "Check_in_time",
+            "indexed": false,
+            "isUpsertBy": false,
+            "name": "Check_in_time",
+            "oid": "faae9bf5-a938-470e-b626-32abb71498c2",
+            "precision": 0,
+            "scale": 0,
+            "size": 8,
+            "type": 4
+        },
+        {
+            "hidden": false,
+            "id": "Attendance_time",
+            "indexed": false,
+            "isUpsertBy": false,
+            "name": "Attendance_time",
+            "oid": "745bbfd0-8654-4f9d-acb8-0b12ff798b21",
+            "precision": 0,
+            "scale": 0,
+            "size": 8,
+            "type": 4
+        },
+        {
+            "hidden": false,
+            "id": "Date",
+            "indexed": false,
+            "isUpsertBy": false,
+            "name": "Date",
+            "oid": "ca2e7c9a-02ef-4d45-8ff1-2f32bd1a3c5d",
+            "precision": 0,
+            "scale": 0,
+            "size": 8,
+            "type": 4
+        }
+    ],
+    "configOptions": {
+        "Table": "ER.csv",
+        "delimiter": ",",
+        "hasHeader": true,
+        "ignoreFirstRows": 0,
+        "ignoreLastRows": 0,
+        "stringQuote": "\""
+    },
+    "dataset": "9ff84bd9-bf2f-452d-aec6-2004cd6908d9",
+    "hidden": false,
+    "id": "ER.csv",
+    "isMaterialized": false,
+    "name": "ER",
+    "oid": "520e0467-e943-401d-9ef2-6645de69dc1c",
+    "tupleTransformations": [
+        {
+            "arguments": {
+                "expression": {
+                    "expression": "MinuteDiff([Attendance_time],[Check_in_time])",
+                    "oid": "0ae01001-7c3a-4879-a450-850ac5147c3c"
+                },
+                "hidden": false,
+                "id": "a69057eb4LQAa2742LQAa46c7LQAaaec5LQAaef32684ac1dc",
+                "indexed": false,
+                "isUpsertBy": false,
+                "lastUpdated": "2023-08-31T15:04:53.503Z",
+                "name": "Waiting time",
+                "oid": "7453ea37-acaf-486d-8605-7bcacbc3d03b",
+                "precision": 0,
+                "scale": 0,
+                "size": 65536,
+                "type": 8
+            },
+            "type": "add-column"
+        }
+    ],
+    "type": "base"
+}

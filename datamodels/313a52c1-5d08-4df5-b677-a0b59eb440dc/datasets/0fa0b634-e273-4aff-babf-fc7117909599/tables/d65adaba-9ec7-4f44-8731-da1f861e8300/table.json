@@ -1,0 +1,104 @@
+{
+    "buildBehavior": {
+        "type": "sync"
+    },
+    "columns": [
+        {
+            "hidden": false,
+            "id": "ID",
+            "indexed": false,
+            "isUpsertBy": false,
+            "name": "ID",
+            "oid": "e33ef9cb-70d4-4a41-af45-920249122043",
+            "precision": 0,
+            "scale": 0,
+            "size": 50,
+            "type": 8
+        },
+        {
+            "hidden": false,
+            "id": "Name",
+            "indexed": true,
+            "isUpsertBy": false,
+            "name": "Name",
+            "oid": "d98d4bbb-d8c1-4d1e-9197-ca135d6f6d4b",
+            "precision": 0,
+            "scale": 0,
+            "size": 65536,
+            "type": 18
+        },
+        {
+            "hidden": false,
+            "id": "Surname",
+            "indexed": true,
+            "isUpsertBy": false,
+            "name": "Surname",
+            "oid": "e4a738f3-3bd6-4f9c-a568-d861a4bd07f3",
+            "precision": 0,
+            "scale": 0,
+            "size": 65536,
+            "type": 18
+        },
+        {
+            "hidden": false,
+            "id": "Specialty",
+            "indexed": true,
+            "isUpsertBy": false,
+            "name": "Specialty",
+            "oid": "b51a9806-162b-4295-aa99-b10c62a565c5",
+            "precision": 0,
+            "scale": 0,
+            "size": 65536,
+            "type": 18
+        },
+        {
+            "hidden": false,
+            "id": "Division_ID",
+            "indexed": false,
+            "isUpsertBy": false,
+            "name": "Division_ID",
+            "oid": "f37f4cff-83fc-456f-ba44-7b993eed5927",
+            "precision": 0,
+            "scale": 0,
+            "size": 50,
+            "type": 8
+        }
+    ],
+    "configOptions": {
+        "Table": "Doctors.csv",
+        "delimiter": ",",
+        "hasHeader": true,
+        "ignoreFirstRows": 0,
+        "ignoreLastRows": 0,
+        "stringQuote": "\""
+    },
+    "dataset": "0fa0b634-e273-4aff-babf-fc7117909599",
+    "hidden": false,
+    "id": "Doctors.csv",
+    "isMaterialized": false,
+    "name": "Doctors",
+    "oid": "d65adaba-9ec7-4f44-8731-da1f861e8300",
+    "tupleTransformations": [
+        {
+            "arguments": {
+                "expression": {
+                    "expression": "[Name]+' '+[Surname]",
+                    "oid": "412cc1a3-dc2a-4321-8890-f4805d776988"
+                },
+                "hidden": false,
+                "id": "a8ec5bf70LQAab216LQAa4caeLQAa8f39LQAacb5b72f7dfd2",
+                "indexed": true,
+                "isUpsertBy": false,
+                "lastUpdated": "2023-08-31T15:04:53.506Z",
+                "name": "Full Name",
+                "oid": "1943088b-718f-494a-af2c-21bef2ef3acb",
+                "precision": 0,
+                "scale": 0,
+                "size": 65536,
+                "type": 18
+            },
+            "type": "add-column"
+        }
+    ],
+    "type": "base"
+}
