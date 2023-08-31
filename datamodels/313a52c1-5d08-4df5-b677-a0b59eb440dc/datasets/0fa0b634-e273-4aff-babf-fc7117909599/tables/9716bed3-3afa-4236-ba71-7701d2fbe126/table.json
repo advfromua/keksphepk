@@ -1,0 +1,118 @@
+{
+    "buildBehavior": {
+        "type": "sync"
+    },
+    "columns": [
+        {
+            "hidden": false,
+            "id": "ID",
+            "indexed": false,
+            "isRoleBySystem": null,
+            "isUpsertBy": false,
+            "name": "ID",
+            "oid": "46b6bb97-726a-41e9-b3bc-a4056646e824",
+            "precision": 0,
+            "role": null,
+            "scale": 0,
+            "size": 50,
+            "type": 8
+        },
+        {
+            "hidden": false,
+            "id": "Name",
+            "indexed": true,
+            "isRoleBySystem": null,
+            "isUpsertBy": false,
+            "name": "Name",
+            "oid": "5297c39d-3bcf-42e4-8d61-19a92f623284",
+            "precision": 0,
+            "role": null,
+            "scale": 0,
+            "size": 65536,
+            "type": 18
+        },
+        {
+            "hidden": false,
+            "id": "Surname",
+            "indexed": true,
+            "isRoleBySystem": null,
+            "isUpsertBy": false,
+            "name": "Surname",
+            "oid": "c0bb8fcd-6315-4b8a-a0a7-70643235bcde",
+            "precision": 0,
+            "role": null,
+            "scale": 0,
+            "size": 65536,
+            "type": 18
+        },
+        {
+            "hidden": false,
+            "id": "Specialty",
+            "indexed": true,
+            "isRoleBySystem": null,
+            "isUpsertBy": false,
+            "name": "Specialty",
+            "oid": "dbb623cb-b0b6-413b-a546-d94bdba1ce4a",
+            "precision": 0,
+            "role": null,
+            "scale": 0,
+            "size": 65536,
+            "type": 18
+        },
+        {
+            "hidden": false,
+            "id": "Division_ID",
+            "indexed": false,
+            "isRoleBySystem": null,
+            "isUpsertBy": false,
+            "name": "Division_ID",
+            "oid": "3f273393-e803-4706-af7d-53de4df133e6",
+            "precision": 0,
+            "role": null,
+            "scale": 0,
+            "size": 50,
+            "type": 8
+        }
+    ],
+    "configOptions": {
+        "Table": "Doctors.csv",
+        "delimiter": ",",
+        "hasHeader": true,
+        "ignoreFirstRows": 0,
+        "ignoreLastRows": 0,
+        "stringQuote": "\""
+    },
+    "dataset": "0fa0b634-e273-4aff-babf-fc7117909599",
+    "description": null,
+    "hidden": false,
+    "id": "Doctors.csv",
+    "isMaterialized": false,
+    "isRoleBySystem": null,
+    "name": "Doctors (1)",
+    "oid": "9716bed3-3afa-4236-ba71-7701d2fbe126",
+    "role": null,
+    "schemaName": null,
+    "tags": null,
+    "tupleTransformations": [
+        {
+            "arguments": {
+                "draftExpression": null,
+                "expression": {
+                    "expression": "[Name]+' '+[Surname]",
+                    "oid": "412cc1a3-dc2a-4321-8890-f4805d776988"
+                },
+                "hidden": false,
+                "indexed": true,
+                "isUpsertBy": false,
+                "name": "Full Name",
+                "oid": "1085283c-ddf2-4e03-854c-9591398baa90",
+                "precision": 0,
+                "scale": 0,
+                "size": 65536,
+                "type": 18
+            },
+            "type": "add-column"
+        }
+    ],
+    "type": "base"
+}

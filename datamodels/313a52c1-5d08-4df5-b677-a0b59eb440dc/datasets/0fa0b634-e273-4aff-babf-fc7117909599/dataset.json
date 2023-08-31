@@ -5,6 +5,7 @@
     "oid": "0fa0b634-e273-4aff-babf-fc7117909599",
     "schemaName": "CSVFile",
     "tables": [
+        "./9716bed3-3afa-4236-ba71-7701d2fbe126/table.json",
         "./d65adaba-9ec7-4f44-8731-da1f861e8300/table.json"
     ],
     "type": "extract"

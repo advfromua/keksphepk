@@ -93,5 +93,21 @@
         ],
         "elasticube": "313a52c1-5d08-4df5-b677-a0b59eb440dc",
         "oid": "41abaee6-de79-4138-a2b6-f8bbcbf43313"
+    },
+    {
+        "columns": [
+            {
+                "column": "46b6bb97-726a-41e9-b3bc-a4056646e824",
+                "dataset": "0fa0b634-e273-4aff-babf-fc7117909599",
+                "table": "9716bed3-3afa-4236-ba71-7701d2fbe126"
+            },
+            {
+                "column": "1a8f624b-06c8-4cd5-9172-4562f5903487",
+                "dataset": "03b10135-9997-442c-a42d-336b0bd83821",
+                "table": "7726d26e-2d74-4fb9-805f-3cd1b6d01016"
+            }
+        ],
+        "elasticube": "313a52c1-5d08-4df5-b677-a0b59eb440dc",
+        "oid": "8519f849-06e5-4c84-8968-66551ab26b2f"
     }
 ]
